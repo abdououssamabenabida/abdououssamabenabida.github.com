@@ -16,7 +16,8 @@ body {
 .main-nav {
   background-color: #eee;  /* Slightly gray background */
   border-bottom: 1px solid #ddd;
-  padding: 0.5rem;
+  padding: 0.7rem 1rem;
+  front-size: 1.1rem;
 }
 
 .main-nav ul {
