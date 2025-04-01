@@ -13,38 +13,32 @@ body {
 }
 
 /* Header and Nav */
-header {
-  background-color: #fff;
+.main-nav {
+  background-color: #eee;  /* Slightly gray background */
   border-bottom: 1px solid #ddd;
-  padding: 1rem;
-  text-align: center;
+  padding: 0.5rem;
 }
 
-header h1 {
-  display: inline-block;
-  margin-right: 2rem;
-  font-size: 1.5rem;
-}
-
-nav ul {
-  display: inline-block;
+.main-nav ul {
   list-style: none;
-  vertical-align: middle;
+  display: flex;            /* Place nav items side by side */
+  justify-content: center;  /* Center them horizontally */
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-left: 1rem;
+.main-nav li {
+  margin: 0 1rem;
 }
 
-nav ul li a {
+.main-nav a {
   text-decoration: none;
   color: #333;
   padding: 0.3rem 0.6rem;
   transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+.main-nav a:hover {
   background-color: #ddd;
   border-radius: 4px;
 }
@@ -53,6 +47,20 @@ nav ul li a:hover {
   background-color: #333;
   color: #fff !important;
   border-radius: 4px;
+}
+
+
+/* NAME HEADER STYLES */
+.name-header {
+  background-color: #fff;  /* White background for contrast */
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;      /* Center the name */
+}
+
+.page-title {
+  font-size: 2rem;         /* Make the name stand out */
+  margin: 0;               /* Remove default margins around h1 */
 }
 
 /* Main Content */
