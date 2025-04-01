@@ -89,3 +89,34 @@ footer {
   border-top: 1px solid #ddd;
   margin-top: 2rem;
 }
+
+.intro {
+  display: flex;        /* Enables Flexbox layout */
+  gap: 2rem;            /* Spacing between columns */
+  margin-bottom: 2rem;  /* Space below intro section */
+}
+
+/* Left column for introduction text */
+.intro-left {
+  flex: 1;              /* Takes up equal space as intro-right by default */
+}
+
+/* Right column for photo and contact info */
+.intro-right {
+  flex: 1;
+}
+
+/* Make the image look neat inside intro-right */
+.intro-right img {
+  max-width: 150px;     /* Adjust if you want a bigger or smaller image */
+  border-radius: 50%;   /* Makes the image circular; remove if unwanted */
+  display: block;
+  margin: 0 auto 1rem;  /* Center the image and give space below */
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;  /* Stacks .intro-left and .intro-right */
+  }
+}
