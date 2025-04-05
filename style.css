@@ -118,7 +118,8 @@ footer {
 
 /* Make the image look neat inside intro-right */
 .intro-right img {
-  max-width: 150px;     /* Adjust if you want a bigger or smaller image */
+  max-width: 150px; 
+  border-radius: 70%; /* Adjust if you want a bigger or smaller image */
   display: block;
   margin: 0 auto 1rem;  /* Center the image and give space below */
 }
